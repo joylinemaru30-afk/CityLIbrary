@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City Library"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shape"
+        android:backgroundTint="#418ADE"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/signin"
+    android:text="signin"
+    android:textSize="20sp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:textColor="#0D0B10"
+    android:backgroundTint="#02A7BD"
+    android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="signup"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#0D0B10"
+        android:backgroundTint="#33C1C1"
+        android:padding="10dp"
+       />
+
+</LinearLayout>
