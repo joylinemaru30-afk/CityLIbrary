@@ -54,9 +54,9 @@ class ApiHelper(var context: Context) {
                 response: JSONObject?
             ) {
                 val message = response?.optString("message")
-                if (message == "Login success") {
+                if (message == "login succesful") {
                     val user = response.optJSONObject("user")
-                    val username = user?.optString("username") ?: ""
+                    val username = user?.optString("user_name") ?: ""
                     val email = user?.optString("email") ?: ""
 
                     // 🔐 Save to SharedPreferences
@@ -66,7 +66,7 @@ class ApiHelper(var context: Context) {
                     editor.putString("email", email)
                     editor.apply()
 
-                    Toast.makeText(context, "Welcome $username", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Welcome $username $email", Toast.LENGTH_LONG).show()
 
                     // Redirect to Dashboard
                     val intent = Intent(context, MainActivity::class.java)
