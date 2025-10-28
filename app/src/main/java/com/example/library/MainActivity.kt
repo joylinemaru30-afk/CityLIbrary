@@ -1,9 +1,11 @@
 package com.example.library
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +22,15 @@ class MainActivity : AppCompatActivity() {
             val signup=Intent(applicationContext,Signup::class.java)
             startActivity(signup)
         }
+        //endListener
+
+        //find the textview by use of an id
+        val UsernameTextview=findViewById<TextView>(R.id.tvUsername)
+        //get the stored username returned from the API
+        val prefs=getSharedPreferences("user_session", Context.MODE_PRIVATE)
+        val username=prefs.getString("username","user")
+        //bind to the textview
+        UsernameTextview.text="Welcome $username"
 
 
     }
