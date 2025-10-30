@@ -7,6 +7,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Dashboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#0838CA" />
+
+        <Button
+            android:id="@+id/btnSell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sell"
+            android:textSize="20sp"
+            android:background="#423"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -26,13 +26,6 @@ class MainActivity : AppCompatActivity() {
         }
         //endListener
 
-        //find the textview by use of an id
-        val UsernameTextview=findViewById<TextView>(R.id.tvUsername)
-        //get the stored username returned from the API
-        val prefs=getSharedPreferences("user_session", Context.MODE_PRIVATE)
-        val username=prefs.getString("username","user")
-        //bind to the textview
-        UsernameTextview.text="Welcome $username"
 
 
     }

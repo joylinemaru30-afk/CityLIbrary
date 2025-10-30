@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Library"
         tools:targetApi="31">
         <activity
+            android:name=".MakePayment"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity
