@@ -41,6 +41,20 @@ class Dashboard : AppCompatActivity() {
         buttonsell.setOnClickListener {
             val sellpage=Intent(Intent.ACTION_VIEW, Uri.parse("https://sokogarden-theta.vercel.app/addproduct"))
             startActivity(sellpage)
+        } //end listener
+
+        //find the logout button by use of its id
+        val logoutButton= findViewById<Button>(R.id.btnLogout)
+
+        logoutButton.setOnClickListener {
+            //clear the stored shared prefrences
+            val prefs=getSharedPreferences("user_session", Context.MODE_PRIVATE)
+            prefs.edit().clear().apply()
+            //navigate to the mainactivity
+            val firstPage=Intent(applicationContext,MainActivity::class.java)
+            startActivity(firstPage)
+
+
         }
 
     }

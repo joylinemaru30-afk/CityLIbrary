@@ -59,7 +59,7 @@ class ApiHelper(private val context: Context) {
 
                 if (message == "login succesful") {
                     val user = response.optJSONObject("user")
-                    val username = user?.optString("username") ?: ""
+                    val username = user?.optString("user_name") ?: ""
                     val email = user?.optString("email") ?: ""
 
                     // 🔐 Save user session

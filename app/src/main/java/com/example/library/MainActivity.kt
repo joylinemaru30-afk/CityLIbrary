@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(signup)
         }
         //endListener
+        val aboutbutton=findViewById<Button>(R.id.about)
+        aboutbutton.setOnClickListener {
+            val aboutpage=Intent(applicationContext,About::class.java)
+            startActivity(aboutpage)
+        } //endlistener
 
 
 

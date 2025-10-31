@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#68C62840"
+    tools:context=".About">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About info"
+        android:textColor="#131106"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:background="@drawable/shape"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#25556D"
+        android:text="welcome to our shop where we sell clothes at an affordable price to all,you can get clothes online and we also do door to door delivery country wide. we are located at Tiryo plaza the fifth floor opposite Tiryo photoshop. All are welcomed to our stop shop center created by Joy"
+        android:id="@+id/textView"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="listen"
+        android:textSize="32sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="#084A66"
+        android:id="@+id/speakButton"
+        android:layout_margin="50dp"/>
+
+</LinearLayout>
